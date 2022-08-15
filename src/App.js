@@ -37,7 +37,7 @@ export default function Home() {
       const getInt = (num) => Math.floor(num)
       const currTime = getInt(event.target.currentTime);
       
-      if (currTime === 2 && !choice['letter']){
+      if (currTime === 64 && !choice['letter']){
         document.getElementById("video").pause();
         setShowControls(false)
       }
@@ -52,10 +52,15 @@ export default function Home() {
       style={{'textAlign': 'center'}}
       data-vjs-player
     >
+      <h1>
+        Play video and wait for 1:04
+      </h1>
+
       <div style={{
         'position': 'relative',
         'width': WIDTH, 
         'height': HEIGHT, 
+        'margin': 'auto'
         }}>
         <video
             id="video"
