@@ -1,0 +1,1 @@
+# smart_cookie_front_end
